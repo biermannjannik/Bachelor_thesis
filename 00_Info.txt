@@ -6,7 +6,7 @@ Before executing any of the files make sure to specify your desired path locatio
 01_extensions_to_deepxde
 Within the folder the custom classes for the generation of MIONets with 3 Branches and a Catesian product dataset according to the formular (B1,B2,B3)xT are described.
 
-02_code
+02_implementation
 The folder includes all code that has been used within for the final steps of the thesis. Earlier models and parameter studies were not included to keep the files concise. Note that all training scripts for the neural networks were executed with the changes of 01_extensions_to_deepxde directly implemented into the local deepxde installation. If that procedure, as descibed within the folder, should be avoided the classes have to be included into the training and evaluation scribts. 
 
 The folder includes the created datasets used in the training of the models in the thesis and the matlab script to generate such datasets. Additionally the 4 best pretrained models with both heat sources and linear/nonlinear material parameters are provided. It also includes scripts to load these models directly and create the evaluation metrics for the runtime and accuray used in the thesis.
