@@ -1,0 +1,19 @@
+DISCLAIMER:
+Before executing any of the files make sure to specify your desired path locations!
+
+To use the classes either include them in the local deepxde installation or place them within the training script.
+
+Extensions for the chosen method with 3 independet branches and a single Catesian product between each of the Branch data with the Trunk data include:
+
+class	MIONetCartesianProd_3Branches
+class	Quintuple
+class	QuintupleCatesianProd
+
+If the classes shall be included in the local deepxde installation replace/include the following files with the given ..._jb.py in 01_deepxde_files and rename them.
+The locations in the deepxde libary are:
+
+/deepxde/nn/pytorch/mionet.py
+/deepxde/nn/pytorch/__init__.py
+
+/deepxde/data/quintuple.py
+/deepxde/data/__init__.py
