@@ -1,0 +1,23 @@
+DISCLAIMER:
+Before executing any of the files make sure to specify your desired path locations!
+
+01_datasets
+The folder includes 6 datasets:
+training & validation data for:
+	Gaussian heat source, linear material parameters
+	Gaussian heat source, nonlinear material parameters
+	annular heat source, linear material parameters
+	annular heat source, nonlinear material parameters
+	annular heat source, linear material parameters, 20 
+validation data for:
+	annular heat source, linear material parameters, max 20% ramp
+	annular heat source, nonlinear material parameters, max 20% ramp
+	
+02_dataset_generation
+The folder includes the matlab scripts (FD_3D_... .m) and helper functions to generate the datasets in the folder data. The are based on explicit time integration and involve both heat sources and both material parameters. Please note that the scripts also include methods for sampling additional points at the boundary and initial conditions that were not applied in the thesis.
+	
+03_models
+The folder includes the results of and scipt used in the parameter studies on the 4 training datasets listed above. Each study consists of 12 models, with detailed information on the error metrics and applied parameter combination listed in the .csv files. The read_l2error.ipynb files evaluated which models performed the best on each dataset.
+
+04_evaluation
+The evaluation consists of a script for both runtime and accuracy which can be applied on any dataset and models of the same architecture. The folder figures lists the resulting figures used in the thesis and others that arent included.
